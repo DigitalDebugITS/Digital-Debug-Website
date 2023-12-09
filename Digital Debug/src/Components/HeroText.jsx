@@ -6,17 +6,38 @@
    Creation: 02/06/2023
    Last modification: 03/06/2023
 */
-
+import { Typewriter } from "react-simple-typewriter";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 
 const HeroText = () => {
-  const name = "bl33h ?";
+  const name = "Digital Debug";
+
+ 
+  const sentences = [
+    "Software Development",
+    "Web Development",
+    "IT Consultancy"
+  
+  ];
 
   return (
+    
     <div
+
       className="noselect w-fit h-fit text-grayscale-50 absolute z-10 flex flex-col justify-center items-center rounded-[50%]"
       id="repulse-div"
     >
+
+<div>
+				<h2
+					style={{ fontFamily: "Morganite Bold, sans-serif" }}
+					className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
+				>
+				 <Typewriter words={sentences} loop={true} />
+					&nbsp;
+				</h2>
+			</div>
+
       <LazyMotion features={domAnimation} strict>
         <m.h1
           initial={{ opacity: 0 }}
@@ -30,7 +51,7 @@ const HeroText = () => {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            Who's{" "}
+            {" "}
           </m.span>
           <m.div
             initial={{ x: 100 }}

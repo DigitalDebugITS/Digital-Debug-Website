@@ -1,10 +1,10 @@
 /*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
+   Copyright (C),2023
+   Author: Digital Debug
    FileName: index.jsx
    Version: I
-   Creation: 02/06/2023
-   Last modification: 02/06/2023
+   Creation: 09/12/2023
+   Last modification: 09/12/2023
 */
 
 
