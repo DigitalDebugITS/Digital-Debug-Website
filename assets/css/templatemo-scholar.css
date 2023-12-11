@@ -1790,8 +1790,9 @@ body {
     margin-bottom: 66px;
   }
   .events .item .image img {
-    position: relative;
+   
     max-width: 100%;
+    
   }
   .events .item ul {
     margin-top: -40px;
