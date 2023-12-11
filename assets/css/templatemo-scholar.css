@@ -1,25 +1,4 @@
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Poppins:ital,wght@0,400;1,300;1,400&family=Raleway:wght@400;600;700;800;900&display=swap');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -82,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
-  font-family: 'Raleway', Courier, monospace;
+  font-family: 'Raleway', Courier;
 }
 
 ul {
@@ -90,7 +69,7 @@ ul {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 28px;
   color: #4a4a4a;
 }
@@ -191,7 +170,7 @@ Pre-loader Style
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.99);
+  background-color: rgba(255, 255, 255, 0.99);
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -384,7 +363,7 @@ Header Style
   padding-right: 20px;
   border-radius: 20px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
@@ -395,6 +374,7 @@ Header Style
   transition: all 0.4s ease 0s;
   border: transparent;
   letter-spacing: .25px;
+
 }
 
 .background-header .main-nav .nav {margin-top: 20px;}
@@ -656,8 +636,7 @@ Banner Style
  
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 170px 0px 120px 0px;
+
 }
 
 
