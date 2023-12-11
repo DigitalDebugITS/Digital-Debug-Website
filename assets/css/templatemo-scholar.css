@@ -1884,39 +1884,6 @@ body {
 
 
 
-#typewriter-text {
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-right: 2px solid #666;
-  animation: typing 3s steps(30) forwards, blink-caret 0.5s step-end 3s infinite;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #666;
-  }
-}
-
 /* Dark Mode  */
 .switch {
   position: relative;
