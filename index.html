@@ -95,8 +95,8 @@
             <h1 style="font-size: 85px; color: #424143; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Digital Debug ITS</h1>
             </div>
             <div id="typed-paragraphs" style="font-size: 24px; color: #666; position: absolute; top: 58%; left: 50%; transform: translateX(-50%);"></div>
-            <span id="cursor">|</span>
           </div>
+
         </div>
       </div>
     </div>
@@ -744,32 +744,38 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var typed = new Typed('#typed-paragraphs', {
-        strings: [
-          'We<span style="color: #2A79DF;"> develop websites.</span>',
-          'We<span style="color: #2A79DF;"> develop Web applications.</span>',
-          'We<span style="color: #2A79DF;"> develop mobile applications.</span>',
-          'We<span style="color: #2A79DF;"> do graphics designing.</span>',
-          'We<span style="color: #2A79DF;"> do networking.</span>',
-        ],
-        typeSpeed: 50, // Adjust the typing speed (milliseconds)
-        backSpeed: 30, // Adjust the backspacing speed (milliseconds)
-        backDelay: 2000, // Delay before starting to backspace (milliseconds)
-        startDelay: 1000, // Delay before starting to type (milliseconds)
-        loop: true, // Enable looping of the strings
-        onStringTyped: function (arrayPos, self) {
-          // Show the cursor after each string is typed
-          document.getElementById('cursor').style.display = 'inline-block';
-        },
-        onComplete: function (self) {
-          // Hide the cursor when typing is complete
-          document.getElementById('cursor').style.display = 'none';
-        },
-      });
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Typed.js
+    var typed = new Typed('#typed-paragraphs', {
+      strings: [
+        'We<span style="color: #2A79DF;"> develop websites.</span>',
+        'We<span style="color: #2A79DF;"> develop Web applications.</span>',
+        'We<span style="color: #2A79DF;"> develop mobile applications.</span>',
+        'We<span style="color: #2A79DF;"> do graphics designing.</span>',
+        'We<span style="color: #2A79DF;"> do networking.</span>',
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 2000,
+      startDelay: 1000,
+      loop: true,
+      // Callback when typing starts
+      onStart: function (self) {
+        document.getElementById('cursor').style.display = 'inline-block';
+      },
+      // Callback after each string is typed
+      onStringTyped: function (arrayPos, self) {
+        // No need to handle cursor visibility here
+      },
+      // Callback when typing is complete
+      onComplete: function (self) {
+        document.getElementById('cursor').style.display = 'none';
+      },
     });
-  </script>
+  });
+</script>
+
 
 <script>
   const modeToggle = document.getElementById("mode-toggle");
