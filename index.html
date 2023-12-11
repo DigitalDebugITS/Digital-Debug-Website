@@ -761,17 +761,7 @@
       startDelay: 1000,
       loop: true,
       // Callback when typing starts
-      onStart: function (self) {
-        document.getElementById('cursor').style.display = 'inline-block';
-      },
-      // Callback after each string is typed
-      onStringTyped: function (arrayPos, self) {
-        // No need to handle cursor visibility here
-      },
-      // Callback when typing is complete
-      onComplete: function (self) {
-        document.getElementById('cursor').style.display = 'none';
-      },
+   
     });
   });
 </script>
