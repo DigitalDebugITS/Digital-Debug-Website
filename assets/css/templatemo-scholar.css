@@ -1937,3 +1937,147 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* ############################################## */
+                    /* Services */
+                    .services {
+                      position: relative;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      padding: 60px 0;
+                      gap: 60px;
+                    }
+                    
+                    .services .box {
+                      position: relative;
+                      width: 300px;
+                      height: 350px;
+                      background: #ffffff;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      overflow: hidden; /* Keep overflow hidden */
+                    }
+                    
+                    .services .box::before,
+                    .services .box::after {
+                      content: '';
+                      position: absolute;
+                      border: 4px solid var(--clr); /* Set the border color and increase the width */
+                      transition: 0.5s ease-in-out;
+                      box-sizing: border-box; /* Include border in element's total width and height */
+                    }
+                    
+                    /* Lines on top and bottom */
+                    .services .box::before {
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 0;
+                    }
+                    
+                    .services .box::after {
+                      bottom: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 0;
+                    }
+                    
+                    /* Lines on left and right */
+                    .services .box::before.vertical {
+                      top: 0;
+                      left: 0;
+                      width: 0;
+                      height: 100%;
+                    }
+                    
+                    .services .box::after.vertical {
+                      top: 0;
+                      right: 0;
+                      width: 0;
+                      height: 100%;
+                    }
+                    
+                    .services .box:hover::before,
+                    .services .box:hover::after {
+                      height: 100%; /* Adjust the height for lines on top and bottom */
+                    }
+                    
+                    .services .box:hover::before.vertical,
+                    .services .box:hover::after.vertical {
+                      width: 100%; /* Adjust the width for lines on left and right */
+                    }
+                    
+                    .services .box .content {
+                      position: relative;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      flex-direction: column;
+                      text-align: center;
+                      gap: 20px;
+                      padding: 0 20px;
+                      width: 100%;
+                      height: 100%;
+                    }
+                    
+                    .services .box .content .icon {
+                      color: var(--clr);
+                      width: 80px;
+                      height: 80px;
+                      box-shadow: 0 0 0 4px #2e2e2e,
+                        0 0 0 6px var(--clr);
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      font-size: 2.5em;
+                      background: #ffffff;
+                      transition: 0.5s ease-in-out;
+                    }
+                    
+                    .services .box:hover .content .icon {
+                      background: var(--clr);
+                      color: #ffffff;
+                      box-shadow: 0 0 0 4px #2e2e2e,
+                        0 0 0 300px var(--clr);
+                    }
+                    
+                    .services .box .content .text h3 {
+                      font-size: 1.5em;
+                      color: #050505;
+                      font-weight: 500;
+                      transition: 0.5s ease-in-out;
+                    }
+                    
+                    .services .box:hover .content .text h3 {
+                      color: #000000;
+                    }
+                    
+                    .services .box .content .text p {
+                      color: #999;
+                      transition: 0.5s ease-in-out;
+                    }
+                    
+                    .services .box:hover .content .text p {
+                      color: #ffffff;
+                    }
+                    
+                    .services .box .content .text a {
+                      position: relative;
+                      background: var(--clr);
+                      color: #ffffff;
+                      padding: 8px 15px;
+                      display: inline-block;
+                      text-decoration: none;
+                      font-weight: 500;
+                      margin-top: 10px;
+                      transition: 0.5s ease-in-out;
+                    }
+                    
+                    .services .box:hover .content .text a {
+                      background: #f3f1f1;
+                      color: var(--clr);
+                    }
+                    
