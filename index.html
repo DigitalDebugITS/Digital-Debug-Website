@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">    <title>Digital Debug ITS</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Poppins:ital,wght@0,400;1,300;1,400&family=Raleway:wght@400;600;700;800;900&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Add this script in the <head> of your HTML document -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
 
     <!-- Additional CSS Files -->
@@ -51,7 +54,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                      <img src="assets/images/logo.png" alt="DD" >
+                      <img src="logo.png" alt="DD" >
                   </a>
                   
                   
@@ -77,18 +80,20 @@
   </header>
 
   <div id="particles-js"></div>
-
   <div class="main-banner" id="top">
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="item item-1">
-                  <div class="header-text">
-                      <h1 style="font-size: 100px; color: #36268b; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Digital Debug IT Solutions</h1>
-                  </div>
-              </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="item item-1">
+          <div class="header-text">
+            <h1 style="font-size: 85px; color: #424143; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Digital Debug ITS</h1>
+            <div id="typed-paragraphs" style="font-size: 24px; color: #666; position: absolute; top: 58%; left: 50%; transform: translateX(-50%);"></div>
+            <span id="cursor">|</span>
           </div>
+        </div>
       </div>
+    </div>
   </div>
+  
   
 
   <div class="services section" id="services">
@@ -147,7 +152,7 @@
                How To Access Our Services?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>1. Contact Us</strong>
                   <br>
@@ -214,11 +219,7 @@
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
             <h2>About Us</h2>
-            <h6>What make us the best?</h6>
             <p>Welcome to <CODE>Digital Debug</CODE>, the heartbeat of innovative IT solutions! At <CODE>Digital Debug</CODE>, we are not just a business; we are architects of digital excellence, crafting websites and systems that make your business soar.</p>
-            <div class="main-button">
-              <a href="#">Discover More</a>
-            </div>
           </div>
         </div>
       </div>
@@ -638,6 +639,33 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var typed = new Typed('#typed-paragraphs', {
+        strings: [
+          'We<span style="color: #2A79DF;"> develop websites.</span>',
+          'We<span style="color: #2A79DF;"> develop Web applications.</span>',
+          'We<span style="color: #2A79DF;"> develop mobile applications.</span>',
+          'We<span style="color: #2A79DF;"> do graphics designing.</span>',
+          'We<span style="color: #2A79DF;"> do networking.</span>',
+        ],
+        typeSpeed: 50, // Adjust the typing speed (milliseconds)
+        backSpeed: 30, // Adjust the backspacing speed (milliseconds)
+        backDelay: 2000, // Delay before starting to backspace (milliseconds)
+        startDelay: 1000, // Delay before starting to type (milliseconds)
+        loop: true, // Enable looping of the strings
+        onComplete: function (self) {
+          // Hide the cursor when typing is complete
+          document.getElementById('cursor').style.display = 'none';
+        },
+        onTypingPaused: function (self) {
+          // Show the cursor when typing is paused
+          document.getElementById('cursor').style.display = 'inline-block';
+        },
+      });
+    });
+  </script>
 
 	<script type="text/javascript" src="assets/js/particles.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
