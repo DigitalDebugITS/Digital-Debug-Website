@@ -93,6 +93,7 @@
         <div class="item item-1">
           <div class="header-text">
             <h1 style="font-size: 85px; color: #424143; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Digital Debug ITS</h1>
+            </div>
             <div id="typed-paragraphs" style="font-size: 24px; color: #666; position: absolute; top: 58%; left: 50%; transform: translateX(-50%);"></div>
             <span id="cursor">|</span>
           </div>
@@ -102,15 +103,6 @@
   </div>
   
   
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="item item-1">
-                  <div class="header-text">
-                      <h1 style="font-size: 100px; color: #36268b; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Digital Debug IT Solutions</h1>
-                  </div>
-                  
-              </div>
-          </div>
           
       </div>
     <center>  <h2>About Us</h2> </center>
@@ -767,13 +759,13 @@
         backDelay: 2000, // Delay before starting to backspace (milliseconds)
         startDelay: 1000, // Delay before starting to type (milliseconds)
         loop: true, // Enable looping of the strings
+        onStringTyped: function (arrayPos, self) {
+          // Show the cursor after each string is typed
+          document.getElementById('cursor').style.display = 'inline-block';
+        },
         onComplete: function (self) {
           // Hide the cursor when typing is complete
           document.getElementById('cursor').style.display = 'none';
-        },
-        onTypingPaused: function (self) {
-          // Show the cursor when typing is paused
-          document.getElementById('cursor').style.display = 'inline-block';
         },
       });
     });
