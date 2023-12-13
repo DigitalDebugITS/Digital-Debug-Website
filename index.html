@@ -91,7 +91,8 @@ p span.stop-blinking::before {
                       <img src="assets/images/logo.png" alt="DD" >
                   </a>
                   
-      
+                  
+
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
@@ -105,17 +106,21 @@ p span.stop-blinking::before {
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
-                <div class="toggle-mode">
-                  <label class="switch">
-                    <input type="checkbox" id="mode-toggle">
-                    <span class="slider round"></span>
-                  </label>
-                </div>
+               
                 
             </div>
         </div>
+        
+    </div>
+    <div class="toggle-mode">
+      <label class="switch" for="mode-toggle">
+        <input type="checkbox" id="mode-toggle" style="display: none;"> <!-- Hide the checkbox -->
+        <i class="fas fa-sun" id="sun-icon" onclick="toggleMode()"></i>
+        <i class="fas fa-moon" id="moon-icon" onclick="toggleMode()" style="display: none;"></i>
+      </label>
     </div>
   </header>
+  
 
   <div id="particles-js"></div>
           <div class="header-text">
@@ -692,19 +697,26 @@ p span.stop-blinking::before {
   }
 </script>
 <script>
-  const modeToggle = document.getElementById("mode-toggle");
-const body = document.body;
+  function toggleMode() {
+  var sunIcon = document.getElementById("sun-icon");
+  var moonIcon = document.getElementById("moon-icon");
+  var body = document.body;
 
-modeToggle.addEventListener("change", () => {
-  if (modeToggle.checked) {
-    // Dark mode
-    body.classList.add("dark-mode");
+  if (sunIcon.style.display !== "none") {
+    // Switch to dark mode
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline-block";
+    body.classList.add("dark-mode"); // Add a class for dark mode
   } else {
-    // Light mode
-    body.classList.remove("dark-mode");
+    // Switch to light mode
+    sunIcon.style.display = "inline-block";
+    moonIcon.style.display = "none";
+    body.classList.remove("dark-mode"); // Remove the class for dark mode
   }
-});
-</script>
+}
+
+  </script>
+
 
 </script>
 <script>
