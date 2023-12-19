@@ -2,36 +2,36 @@ import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 
+
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Kayanda Besa",
+    designation: "CEO of Wila Wane Store",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "As the CEO of a toy store, our venture into the digital realm was made seamless and successful. They designed and developed an exceptional e-commerce website tailored to our unique needs. The user-friendly interface, coupled with secure payment gateways, has significantly enhanced our customers' online shopping experience. The Digital Debug team demonstrated professionalism, creativity, and a deep understanding of the toy industry.",
+      image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Jeff Mwape",
+    designation: "BlueNote Cafe Manager",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "As a Pub and Grill Manager, finding the right Point of Sale (POS) system was crucial for our operations. Digital Debug IT Services not only met but exceeded our expectations. The custom POS solution they crafted for us streamlined our transactions, inventory management, and overall business processes. Their team's dedication and expertise made the implementation seamless, and the ongoing support ensures our business runs smoothly.",
+      image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Josphat Mwenda",
+    designation: "Head of ICT Silver Maple College",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Digital Debug IT Services has played a pivotal role in enhancing our online presence at Silver Maple College. The team's attention to detail, innovative approach, and seamless integration of features have made our website a valuable asset. We appreciate Digital Debug's commitment to delivering high-quality solutions and their responsiveness to our specific requirements. Thanks to their efforts, our digital platform now reflects the excellence and prestige synonymous with Silver Maple College.",
+      image: "/images/testimonials/auth-01.png",
     star: 5,
   },
 ];
-
 const Testimonials = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">

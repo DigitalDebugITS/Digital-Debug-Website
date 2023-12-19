@@ -24,8 +24,11 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="About US"
+                paragraph="Step into the vibrant world of Digital Debug, where the pulse of innovative IT solutions beats with the rhythm of Zambian enthusiasm. We aren't merely a business; we are the trailblazers of digital excellence, dedicated to shaping websites and systems that propel your enterprise to new heights.
+                Born in the heart of Zambia, Digital Debug is a testament to the dynamic spirit of the nation. Our roots are firmly embedded in the rich soil of Zambian culture, and our vision is fueled by the energy of the young minds that drive our innovation.
+                At Digital Debug, we believe in the power of youthful ingenuity to transform ideas into reality. Our team is a collective of young, passionate individuals who bring fresh perspectives and creative solutions to every project. We thrive on the excitement of pushing boundaries, embracing challenges, and exceeding expectations.
+                Whether you're a start-up venturing into the digital realm or an established business seeking a technological facelift, Digital Debug is your trusted partner. Join us on this exciting journey where innovation meets passion, and together, let's redefine the digital landscape in Zambia and beyond. Welcome to Digital Debug, where possibilities are limitless, and the future is digital."
                 mb="44px"
               />
 
@@ -35,15 +38,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
+                    {/* <List text="Premium quality" />
                     <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Use for lifetime" /> */}
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
+                    {/* <List text="Next.js" />
                     <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Developer friendly" /> */}
                   </div>
                 </div>
               </div>
