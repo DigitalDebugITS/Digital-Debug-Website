@@ -31,3 +31,19 @@
     @apply opacity-100;
   }
 }
+/* Add this CSS to your global or component styles */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  margin-bottom: 10px;
+}
+
+.project-details {
+  text-align: center;
+}
+

@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="SERVICES"
-            paragraph="Digital Debug Offers a wide variety of services"
+            paragraph="At Digital Debug, we transcend conventional boundaries, breathing life into innovative and transformative digital solutions. Our comprehensive suite of services is meticulously crafted to empower businesses, both large and small, on their digital journey. We are not just a service provider; we are your strategic partner, dedicated to elevating your digital presence and propelling your enterprise to new heights."
             center
           />
 
