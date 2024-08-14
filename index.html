@@ -5,13 +5,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-
         <!-- Site Title -->
-        <title>Runok - Web Agency HTML5 Template</title>
-
+        <title>Digital Debug ITS Zambia</title>
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-
         <!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -22,6 +19,7 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
+          
     </head>
 
     <body>
@@ -42,44 +40,7 @@
                                     <li><a href="#services">Services</a></li>
                                     <li><a href="#faq">FAQ</a></li>
                                     <li><a href="#projects">Projects</a></li>
-                                    <!-- <li class="menu-item-has-children">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="project.html">Portfolio</a></li>
-                                            <li><a href="project-details.html">Portfolio Details</a></li>
-                                            <li><a href="pricing.html">Pricing Plans</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="error.html">404 Error</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- <li class="menu-item-has-children">
-                                        <a href="service.html">Services</a>
-                                        <ul>
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- <li class="menu-item-has-children">
-                                        <a href="shop.html">Shop</a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-details.html">Shop Details</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <li class="menu-item-has-children">
-                                        <a href="blog-grid.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-grid-2.html">Blog list</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="blog-grid.html">Blog</a> </li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -1105,7 +1066,44 @@
 
         <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
         <!--scrollup-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode-js.min.js"></script>
+        <script>
+            const options = {
+                bottom: 'unset',  // Disable bottom positioning
+                right: '32px',   // Align to the right
+                top: '32px',     // Align near the top
+                left: 'unset',   // Disable left positioning
+                time: '0.5s',    // Transition time
+                mixColor: '#fff',
 
+                buttonColorDark: '#100f2c',
+                buttonColorLight: '#fff',
+                saveInCookies: false, // Do not save mode in cookies
+                label: '', // Empty label to allow for custom icons
+                autoMatchOsTheme: false // Do not auto match OS theme
+            };
+    
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+    
+            // Replace the default button content with custom icons
+            document.querySelector('.darkmode-toggle').innerHTML = `
+                <svg id="mode-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path id="sun-icon" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z" style="display: none;"/>
+                    <path id="moon-icon" d="M21.78 15.35A9 9 0 0111.22 3.63a9 9 0 1010.56 11.72z"/>
+                </svg>
+            `;
+    
+            // Toggle between light mode and default mode
+            document.querySelector('.darkmode-toggle').addEventListener('click', function() {
+                const isLightMode = document.body.classList.contains('light-mode');
+                document.getElementById('sun-icon').style.display = isLightMode ? 'block' : 'none';
+                document.getElementById('moon-icon').style.display = isLightMode ? 'none' : 'block';
+    
+                // Toggle the light-mode class
+                document.body.classList.toggle('light-mode', !isLightMode);
+            });
+            </script> -->
         <!-- JS here -->
         <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
         <script src="assets/js/vendor/bootstrap-bundle.js"></script>
